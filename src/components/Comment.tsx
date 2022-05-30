@@ -15,7 +15,7 @@ function Comment() {
     const [summaryState, setSummaryState] = useState<string>("");
 
     function onSubmitForm(event: FormEvent<HTMLFormElement>) {
-        event?.preventDefault();
+        event.preventDefault();
         setComment((prev) => [...prev, { name: nameState, summary: summaryState }])
         setMessageState("댓글들")
         setNameState("")
