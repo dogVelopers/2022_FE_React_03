@@ -1,7 +1,17 @@
+// css
+import "./App.css";
+
+//components
+import Header from "./components/Header";
+import Comment from "./components/Comment";
+
 function App() {
   return (
-    <div>
-      <h1>Hello world 03</h1>
+    <div className="App">
+      <div className="container">
+        <Header />
+        <Comment />
+      </div>
     </div>
   );
 }
