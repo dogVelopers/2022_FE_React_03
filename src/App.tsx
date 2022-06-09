@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Nav />
-      <div css={contentWrapper}>
+      <section css={contentWrapper}>
         <div css={inWrapper}>
           <h1 css={title}>한슬희 | dogvelopers</h1>
           <div css={informWrapper}>
@@ -38,7 +38,7 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

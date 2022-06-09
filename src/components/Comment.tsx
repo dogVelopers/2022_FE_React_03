@@ -9,14 +9,14 @@ interface IComment {
 }
 
 function Comment() {
-    const [comment, setComment] = useState<IComment[]>([]);
+    const [comments, setComments] = useState<IComment[]>([]);
     const [messageState, setMessageState] = useState("댓글이 아직 없어요");
     const [nameState, setNameState] = useState<string>("");
     const [summaryState, setSummaryState] = useState<string>("");
 
     function onSubmitForm(event: FormEvent<HTMLFormElement>) {
         event.preventDefault();
-        setComment((prev) => [...prev, { name: nameState, summary: summaryState }])
+        setComments((prev) => [...prev, { name: nameState, summary: summaryState }])
         setMessageState("댓글들")
         setNameState("")
         setSummaryState("");
@@ -39,8 +39,8 @@ function Comment() {
                 <button css={buttonWrapper}>확인</button>
             </form>
             <div css={commentSort}>
-                {comment.map((todo: IComment) => (
-                    <span><b>{todo.name}</b>: {todo.summary}</span>
+                {comments.map((comment) => (
+                    <span><b>{comment.name}</b>: {comment.summary}</span>
                 ))}</div>
         </div>
     );
