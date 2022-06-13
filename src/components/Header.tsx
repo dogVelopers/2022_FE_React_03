@@ -1,29 +1,32 @@
-import profile from "../image/profile.jpeg";
+import avatar from "../image/avatar.jpeg";
 
 function Header() {
   return (
-    <div className="header">
-      {/* <h1>노욱진</h1> */}
-      <div className="headerAvatar">
-        <img src={profile} alt="" />
-      </div>
-      <div className="headerMain">
-        <div className="haderMainTitle">
-          <span>이름</span>
-          <span>생년월일</span>
-          <span>학부</span>
-          <span>전공</span>
-          <span>학번</span>
+    <header>
+      <h1 className="hello">WELC🙇‍♂️ME</h1>
+      <div className="headerArticle">
+        <div className="headerAvatar">
+          <img src={avatar} alt="avatar" />
         </div>
-        <div className="headerMainSubtitle">
-          <span>노욱진</span>
-          <span>98년 03월 15일</span>
-          <span>인문융합자율학부</span>
-          <span>소프/영어</span>
-          <span>201811105</span>
+        <div className="headerMain">
+          <span className="title bolder">
+            FE_DEVELOPER <span className="smaller">되고 싶은...</span>
+          </span>
+          <span>
+            🧐 저의 이름은 <span className="bolder">노욱진</span>입니다
+          </span>
+          <span>
+            🤔 제 학번은 <span className="bolder">201811105</span> 입니다
+          </span>
+          <span>
+            👨‍💻 현재 저는 <span className="bolder">인문융합자율학부</span>이며
+            <span className="bolder"> 소프트웨어공학</span>을 주전공으로
+            공부하고 있습니다
+          </span>
+          <span>🐢 느리지만 열심히 배우려고 노력하고 있습니다 </span>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 

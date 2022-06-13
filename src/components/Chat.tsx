@@ -1,18 +1,11 @@
-interface Comment {
-  textName: string[];
-  textContent: string[];
-}
-
-function Chat({ textName, textContent }: Comment) {
+function Chat(props: any) {
   return (
-    <li className="chats">
-      {textName.map((i, a) => {
+    <li>
+      {props.comments.map((eachComment: any) => {
         return (
-          <div className="text1">
-            <span>
-              {i} : {textContent[a]}
-            </span>
-          </div>
+          <span>
+            {eachComment.name} : {eachComment.content}
+          </span>
         );
       })}
     </li>
