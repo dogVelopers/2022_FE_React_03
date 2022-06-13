@@ -1,0 +1,10 @@
+li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 0px;
+  margin-top: 1.6rem;
+}
+li span {
+  padding: 0.5rem 0rem;
+}

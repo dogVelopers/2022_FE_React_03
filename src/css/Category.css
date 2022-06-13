@@ -1,0 +1,23 @@
+.bookmark {
+  display: flex;
+  justify-content: center;
+  padding: 0.1rem 20rem;
+  margin-bottom: 5rem;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.2);
+}
+.bookmark button {
+  font-weight: lighter;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  margin-top: -3px;
+  padding-top: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: none;
+  border-top: 1.8px solid rgba(0, 0, 0, 1);
+  background-color: white;
+}
+.bookmark button:nth-of-type(2) {
+  border-top: 1.8px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+}

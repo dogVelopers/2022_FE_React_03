@@ -1,127 +1,25 @@
-body {
-  margin: 0px;
-  padding: 0px;
+@font-face {
+  font-family: "Noto Serif KR";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notoserifkr/v20/3JnmSDn90Gmq2mr3blnHaTZXTkxB8O5ZMn1b39okNYUZufq6F7MLkGHhWFrYYbM.0.woff2)
+    format("woff2");
+  unicode-range: U+f9ca-fa0b, U+ff03-ff05, U+ff07, U+ff0a-ff0b, U+ff0d-ff19,
+    U+ff1b, U+ff1d, U+ff20-ff5b, U+ff5d, U+ffe0-ffe3, U+ffe5-ffe6;
 }
-
-/* App.tsx */
-.App {
-  max-width: 100%;
-  height: 100vh;
-  padding-top: 100px;
-  padding-right: 150px;
-  padding-left: 100px;
-  background-color: rgb(12, 14, 18);
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Noto Serif KR";
 }
 .container {
-  color: rgb(200, 200, 200);
-  width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
-/* Header.tsx */
-.header {
-  width: 40%;
-  margin-bottom: 50px;
-}
-.headerAvatar {
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
-}
-.headerAvatar img {
-  width: 80%;
-  height: 220px;
-  border-radius: 50%;
-}
-.headerMain {
-  display: flex;
-  justify-content: center;
-  margin-right: 15px;
-  color: white;
-}
-.haderMainTitle,
-.headerMainSubtitle {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-left: 30px;
-}
-.haderMainTitle span,
-.headerMainSubtitle span {
-  margin-bottom: 5px;
-  font-size: 14px;
-  font-weight: 600;
-}
-.headerMainSubtitle {
-  margin-left: 20px;
-}
-
-/* Comment.tsx */
-.chat {
-  list-style: none;
-  width: 100%;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgb(36, 41, 47);
-  border-radius: 15px;
-}
-.chat h3 {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-.chat div {
-  font-size: 20px;
-}
-.text1 {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-form input {
-  border: none;
-  padding: 15px 8px;
-  border-radius: 30px;
-  background-color: white;
-}
-form input:focus {
-  outline: none;
-}
-.firstInput {
-  padding-left: 20px;
-  width: 180px;
-  position: relative;
-  left: 50px;
-}
-.secondInput {
-  padding-left: 40px;
-  width: 550px;
-  position: relative;
-  z-index: 1;
-}
-form button {
-  background-color: white;
-  border: none;
-  position: relative;
-  right: 40px;
-  z-index: 1;
-}
-
-/* Chat.tsx */
-.chats {
-  margin-top: 30px;
-}
-.text1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 5px;
-  margin-left: 60px;
-}
-.text1 span {
-  font-size: 14px;
+  align-items: center;
+  padding: 3rem 10rem;
+  height: 80rem;
 }
