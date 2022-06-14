@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.hello {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 6rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.headerArticle {
+  display: flex;
+}
+.headerAvatar img {
+  border-radius: 50%;
+  width: 16rem;
+  height: 15rem;
+}
+.headerMain {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.3rem;
+  margin-left: 3rem;
+}
+.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 0.6rem;
+}
+.headerMain span {
+  margin-bottom: 1rem;
+}
+.bolder {
+  font-weight: bold;
+  color: black;
+}
+.smaller {
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.6);
+}

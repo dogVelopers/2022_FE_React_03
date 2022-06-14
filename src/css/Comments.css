@@ -1,0 +1,31 @@
+.chat h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+form :nth-child(1) {
+  padding: 0.5rem 0rem;
+}
+form :nth-child(2) {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.1rem;
+  padding-right: 20rem;
+  margin-right: 0.3rem;
+}
+form input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-right: 0.5rem;
+}
+form input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+form button {
+  border: none;
+  background-color: white;
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+}
