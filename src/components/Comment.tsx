@@ -2,7 +2,7 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import Chat from "./Chat";
 
 // comments state의 객체 값을 위한 interface 선언
-interface CommentBox {
+export interface CommentBox {
   id: number;
   name: string;
   content: string;
@@ -59,7 +59,7 @@ function Comment() {
           onChange={onChangeContentInput}
         />
         <button type="submit">확인</button>
-        <Chat comments={comments} />
+        <Chat Comments={comments} />
       </form>
     </div>
   );

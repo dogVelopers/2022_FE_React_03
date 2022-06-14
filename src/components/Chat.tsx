@@ -1,7 +1,13 @@
-function Chat(props: any) {
+import { CommentBox } from "./Comment";
+
+interface ChatProps {
+  Comments: CommentBox[];
+}
+
+function Chat({ Comments }: ChatProps) {
   return (
     <li>
-      {props.comments.map((eachComment: any) => {
+      {Comments.map((eachComment) => {
         return (
           <span>
             {eachComment.name} : {eachComment.content}
