@@ -9,7 +9,7 @@ function Count() {
   }
   return (
     <div css={sortItem}>
-      <span css={countNum}>{count}</span>
+      <span>{count}</span>
       <button css={increaseButton} onClick={CountUp}>
         더하기
       </button>
@@ -24,16 +24,14 @@ const sortItem = css`
   flex-direction: column;
 `;
 
-const countNum = css`
-  font-size: 30px;
-  font-weight: 700;
-`;
-
 const increaseButton = css`
   all: unset;
   width: fit-content;
   height: fit-content;
-  padding: 10px 8px;
+  padding: 10px 14px;
   border-radius: 5px;
   background-color: #e84393;
+  font-weight: 400;
+  font-size: 13px;
+  cursor: pointer;
 `;
